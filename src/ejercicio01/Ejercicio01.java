@@ -49,6 +49,10 @@ public class Ejercicio01 {
             
             System.out.println("¿Desea continuar con la busqueda de asientos? S/N");
             respuesta = tecla.next();
+            
+            if(respuesta.equalsIgnoreCase("S")){
+                status=true;
+            }
         }
     }
 
