@@ -5,6 +5,7 @@
 package Prueba_1;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -17,9 +18,12 @@ public class Test1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner name = new Scanner(System.in);
-        String inputName = name.next();
-        System.out.println("Hola ..." .concat(inputName));
+        //Scanner name = new Scanner(System.in);
+        //System.out.println("Ingresa tu nombre");
+        String name = JOptionPane.showInputDialog(null, "Ingrea tu nombre");
+        //String inputName = name.next();        
+        JOptionPane.showMessageDialog(null, "Tu nombre es " + name);
+        //System.out.println("Hola ..." .concat(inputName));
     }
     
 }
